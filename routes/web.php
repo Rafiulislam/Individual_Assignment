@@ -55,9 +55,9 @@ Route::get('/admin/search','adminController@search')->name('admin.search');
 
 Route::get('/admin/content','adminController@content')->name('admin.content');
 
-Route::get('/admin/request-content','adminontroller@request-content')->name('admin.request-content');
+Route::get('/admin/request-content','adminontroller@request_content')->name('admin.request-content');
 
-Route::get('/admin/moderator-msg','adminontroller@moderator-msg')->name('admin.moderator-msg');
+Route::get('/admin/moderator-msg','adminontroller@moderator_msg')->name('admin.moderator-msg');
 
 Route::get('/admin/report','adminontroller@report')->name('admin.report');
 

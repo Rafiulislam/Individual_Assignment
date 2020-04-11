@@ -54,8 +54,40 @@ class adminController extends Controller
     
     public function moderatorinfo(Request $req){
 		
-		$moderators = User::where('type', 'moderator')->get();
-		return view('admin.moderatorinfo')->with('moderator', $moderators);
+		$moderator = User::where('type', 'moderator')->get();
+		return view('admin.moderatorinfo')->with('moderators', $moderator);
 	}
+
+	public function search(Request $req){
+		
+		return view('admin.search');
+	 }
+	 public function content(Request $req){
+		
+		return view('admin.content');
+	 }
+
+	 public function request_content(Request $req){
+		
+		return view('admin.request-content');
+	 }
+	
+	  public function moderator_msg(Request $req){
+		
+		return view('admin.moderator-msg');
+	 }
+
+
+	 public function report(Request $req){
+		
+		return view('admin.report');
+	 }
+
+	 public function notice(Request $req){
+		
+		return view('admin.notice');
+	 }
+	
+
 
 }
