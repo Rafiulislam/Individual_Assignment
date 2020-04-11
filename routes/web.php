@@ -97,7 +97,7 @@ Route::post('/teacherhome/result', 'TeacherHomeController@insertresult');
 
 //student route
 
-Route::get('/studenthome', 'studenthomecontroller@index')->name('studenthome.index');
+Route::get('/user', 'userController@index')->name('user.index');
 
 Route::get('/studenthome/noticeview', 'studenthomecontroller@noticeview')->name('studenthome.noticeview');
 
